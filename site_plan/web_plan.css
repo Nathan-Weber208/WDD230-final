@@ -1,0 +1,247 @@
+
+/* set up color varables in an index*/
+:root{
+    --background1: #f5f5f5;
+    --background2: #175194;
+    --primary: black;
+    --secondary: white;
+}
+
+
+
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--background2);
+
+}
+
+.header-grid img {
+    grid-column: 1 / 1;
+    grid-row: 2;
+    border-radius: 5px;
+
+    max-height: 100px;
+}
+.header-grid nav{
+    grid-column: 2 / 5;
+    grid-row: 2/2;
+    border-radius: 5px;
+    
+    
+}
+
+.header-grid h1 {
+    grid-column: 2 / 5;
+    grid-row: 1/1;
+    /* margin-top: auto; */
+    margin: 0 auto;
+    color: var(--secondary);
+    
+
+}
+
+
+
+body {
+    background-color: var(--background1);
+}
+
+img{
+max-width: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Proza Libre', sans-serif;
+    color: var(--primary);
+}
+
+p {
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--background2);
+}
+
+.footer-grid p {
+    margin-top: auto;
+    text-align: left;
+    margin-left: 10px;
+    color: var(--secondary);
+    grid-column: 1 / 4;
+    grid-row: 1/1;
+}
+
+/* Target audience specific */
+
+
+.persona_tile {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+}
+
+.persona_tile h4 {
+    grid-column: 1 / 5;
+    grid-row: 1/1;
+    margin-bottom: auto;
+    text-align: left;
+
+}
+
+.persona_tile img {
+    max-width: 200px;
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.persona_tile p {
+    grid-column: 2 / 5;
+    grid-row: 2;
+
+    text-align: left;
+}
+
+/* color scheme specific */
+.typo-grid{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    background-color: var(--background1);
+}
+
+.colors{
+    grid-column: 1 / 2;
+    grid-row: 1/1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+.fonts{
+    grid-column: 2 / 3;
+    grid-row: 1/1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+th {
+    color: var(--primary);
+    padding:15px
+}
+
+.primary {
+    color: black;
+    background-color: var(--primary);
+    padding:15px
+}
+
+.secondary {
+    color: white;
+    background-color: var(--secondary);
+    padding:15px
+}
+
+.accent1 {
+    color: black;
+    background-color: var(--background1);
+    padding:15px
+}
+
+.accent2 {
+    color: white;
+    background-color: var(--background2);
+    padding:15px
+}
+
+
+/* copy from example */
+
+nav{
+    
+
+    background-color: var(--background1);
+	text-align: center;
+	
+    display: flex;
+	flex-direction: column;
+}
+nav div {
+	flex: 1 1 auto;
+}
+nav a {
+	display: block;
+	color:#99738E;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+nav a:hover {
+	background-color: var(--background2);
+	color: var(--secondary);
+    
+}
+
+main img {
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--background1);
+}
+.index-grid img{
+    max-width: fit-content;
+    max-height: 300px;
+    /* centered with large margin */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    
+}
+.index-grid p{
+    grid-column: 1 / 6;
+    grid-row: 1/1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    color: var(--primary);
+    font-size: larger;
+    /* centered with a large margin */
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+}
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
+
